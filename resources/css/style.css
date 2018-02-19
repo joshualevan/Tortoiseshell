@@ -96,3 +96,24 @@ section {
 .ruler-truck {
   width: 5rem;
 }
+
+/*Info Section*/
+time {
+  justify-content: center;
+}
+
+.info-container {
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 35%;
+  margin-right: 5rem;
+}
+
+.label {
+  background-color: cadetblue;
+  color: white;
+  font-weight: bold;
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
