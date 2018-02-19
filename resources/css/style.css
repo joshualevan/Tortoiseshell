@@ -11,20 +11,15 @@ html {
 
 .container {
   max-width: 960px;
-  margin: auto;
 }
 
 .logo {
   height: 1.5rem;
   margin-right: 1rem;
 }
+/* Global < 768 pixels*/
+@media only screen and (max-width: 768px) {
 
-.bkrd-clr1 {
-  background-color: cadetblue;
-}
-
-.bkgrdclr2 {
-  background-color: #eff8ff;
 }
 
 /*Main and Navbar*/
@@ -44,6 +39,7 @@ main {
   align-items: center;
   padding: 1rem 0 1rem 2rem;
   margin-top: 1rem;
+  background-color: cadetblue;
 }
 
 .logo-container {
@@ -71,6 +67,27 @@ nav a:hover {
   float: right;
   position: relative;
   left: 2rem;
+}
+/* Main and Navbar < 768 pixels*/
+@media only screen and (max-width: 768px) {
+  main {
+    height: 22rem;
+  }
+
+  .navbar {
+    max-width: 768px;
+    margin-top: 0;
+  }
+  .logo-container {
+    width: 40%;
+  }
+
+  .tagline {
+    padding: 0.75rem 4rem;
+    font-size: 0.665rem;
+    margin-top: 5rem;
+    left: -2rem
+  }
 }
 
 /*Icons*/
@@ -119,6 +136,10 @@ time {
   padding: 0.5rem 1.25rem;
   margin-bottom: 1rem;
 }
+/*INfo Section < 768 pixels*/
+.info {
+  margin: 3rem auto 5rem auto;
+}
 
 /*Footer*/
 footer {
@@ -126,4 +147,8 @@ footer {
   background-color: azure;
   padding: 4rem;
   align-items: center;
+}
+
+.footer {
+  justify-content: center;
 }
