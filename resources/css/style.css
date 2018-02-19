@@ -71,3 +71,28 @@ nav a:hover {
   position: relative;
   left: 2rem;
 }
+
+/*Icons*/
+section {
+  width: 100%;
+  justify-content: center;
+}
+
+.icon-column {
+  margin: 0 3rem;
+  text-align: center;
+  margin-top: 3rem;
+  width: 5rem;
+  height: 8rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.paper {
+  width: 3.5rem;
+}
+
+.ruler-truck {
+  width: 5rem;
+}
