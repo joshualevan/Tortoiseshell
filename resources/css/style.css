@@ -122,6 +122,7 @@ time {
 
 /*Footer*/
 footer {
+  width: 49.333rem;
   background-color: azure;
   padding: 4rem;
   align-items: center;
