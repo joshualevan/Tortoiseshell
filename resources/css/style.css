@@ -189,8 +189,10 @@ time {
   margin-bottom: 1rem;
 }
 /*Info Section < 768 pixels*/
+@media only screen and (max-width: 768px){
 .info {
-  margin: 3rem auto 5rem auto;
+  margin: 0 2.5rem;
+  align-content: center;
 }
 /*Info Section below 500 pixels*/
 @media only screen and (max-width: 500px) {
