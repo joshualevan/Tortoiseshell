@@ -17,9 +17,15 @@ html {
   height: 1.5rem;
   margin-right: 1rem;
 }
-/* Global < 768 pixels*/
-@media only screen and (max-width: 768px) {
+/*Global below 500 pixels*/
+@media only screen and (max-width: 500px) {
+  .hide {
+    display: none;
+  }
 
+  p {
+    font-size: 0.77rem;
+  }
 }
 
 /*Main and Navbar*/
@@ -58,6 +64,10 @@ nav a:hover {
   color: black;
 }
 
+.menu {
+  display: none;
+}
+
 .tagline {
   padding: 1.5rem 5rem;
   background-color: white;
@@ -89,6 +99,32 @@ nav a:hover {
     left: -2rem
   }
 }
+/* Main and Navbar below 500 pixels*/
+@media only screen and (max-width: 500px) {
+  main {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .menu {
+    display: inline;
+  }
+
+  .navbar {
+    max-width: 500px;
+  }
+
+  .tagline {
+    position: static;
+    display: flex;
+    justify-content: center;
+    float: none;
+    max-width: 500px;
+    margin-top: 9rem;
+    padding: 0.5rem;
+    font-size: 0.5rem;
+  }
+}
 
 /*Icons*/
 section {
@@ -114,6 +150,22 @@ section {
 .ruler-truck {
   width: 5rem;
 }
+/*Icons below 500px*/
+@media only screen and (max-width: 500px) {
+    section{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .icon-column {
+      margin-top: 1.54rem;
+    }
+
+    #icon-top {
+      margin-top: 3.77rem;
+    }
+}
 
 /*Info Section*/
 time {
@@ -136,9 +188,24 @@ time {
   padding: 0.5rem 1.25rem;
   margin-bottom: 1rem;
 }
-/*INfo Section < 768 pixels*/
+/*Info Section < 768 pixels*/
 .info {
   margin: 3rem auto 5rem auto;
+}
+/*Info Section below 500 pixels*/
+@media only screen and (max-width: 500px) {
+  .info {
+    margin: 3.77rem 0 0 0;
+    flex-direction: column;
+  }
+  .info-container {
+    margin: 0 0 4rem 0;
+    width: 100%;
+  }
+  .label {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 /*Footer*/
@@ -151,4 +218,10 @@ footer {
 
 .footer {
   justify-content: center;
+}
+/*Footer below 500 pixels*/
+@media only screen and (max-width: 500px) {
+footer {
+  justify-content: center;
+}
 }

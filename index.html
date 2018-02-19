@@ -13,12 +13,13 @@
         <div class="navbar flexbox">
           <div class="flexbox logo-container">
             <img class="logo" src="./resources/images/logo-white.png" alt="Glasses logo white">
-            <span>Tortoiseshell Optics</span>
+            <span class="hide">Tortoiseshell Optics</span>
           </div>
           <nav>
-            <a href="#">Services</a>
-            <a href="#">Products</a>
-            <a href="#">Contact</a>
+            <a class="hide" href="#">Services</a>
+            <a class="hide" href="#">Products</a>
+            <a class="hide" href="#">Contact</a>
+            <a class="menu" href="#">Menu</a>
           </nav>
         </div>
         <div class="tagline">
@@ -27,32 +28,32 @@
       </div>
     </main>
     <section class="flexbox">
-      <div class="icon-column flexbox">
+      <div class="icon-column flexbox" id="icon-top">
         <img class="paper" src="./resources/images/paper-icon.png" alt="Paper icon">
         <p>Comprehensive Exams</p>
       </div>
       <div class="icon-column flexbox">
         <img class="ruler-truck" src="./resources/images/ruler-icon.png" alt="Ruler icon">
-        <p>Comprehensive Exams</p>
+        <p>Custom Fittings</p>
       </div>
       <div class="icon-column flexbox">
         <img class="ruler-truck" src="./resources/images/truck-icon.png" alt="Truck icon">
-        <p>Comprehensive Exams</p>
+        <p>Fast Delivery</p>
       </div>
     </section>
 
     <!-- Info Section -->
     <time class="flexbox">
-      <div class="container flexbox">
-        <div class="info-container info">
+      <div class="container flexbox info">
+        <div class="info-container">
           <div class="label">
-            <p>PHILOSOPHY</p>
+            <span>PHILOSOPHY</span>
           </div>
           <p>Over 75% of our brains are dedicated to one sense: vision. We believe everyone deserves to see the world, not matter what. That’s why we offer eye exams, custom fittings, and quick delivery at a low cost. It’s your vision that makes ours.</p>
         </div>
         <div class="info-container">
           <div class="label">
-            <p>APPOINTMENTS</p>
+            <span>APPOINTMENTS</span>
           </div>
           <p>Schedule an appointment by calling us at (312) 654-0987. We’re open Tuesday - Saturday, 9AM - 6PM.</p>
         </div>
@@ -63,7 +64,7 @@
     <div class="footer flexbox">
         <footer class="flexbox">
           <img class="logo" src="./resources/images/logo-black.png" alt="Glasses logo black">
-          <span>&copy; 2018 Tortoiseshell Optics</span>
+          <span class="hide">&copy; 2018 Tortoiseshell Optics</span>
         </footer>
     </div>
   </body>
